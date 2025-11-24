@@ -1,0 +1,21 @@
+---
+- name: Configure Apache on Amazon Linux
+  hosts: all
+  become: true
+  tasks:
+    - name: Update packages
+      yum:
+        name: "*"
+        state: latest
+
+    - name: Install Apache (httpd)
+      yum:
+        name: httpd
+        state: present
+
+    - name: Enable and start Apache
+      service:
+        name: httpd
+        state: started
+        enabled: true
+

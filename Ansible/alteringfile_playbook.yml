@@ -1,0 +1,10 @@
+---
+  - name: Copying HTML file in the apche server
+    hosts: all
+    become: yes
+    tasks:
+      - name: Copies the file
+        copy:
+          src: ~/EC2_PROVISION/Ansible/index.html
+          dest: /var/www/html/index.html
+

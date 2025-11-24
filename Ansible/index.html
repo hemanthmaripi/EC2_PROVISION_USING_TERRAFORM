@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansible-Deployed Page</title>
+    <style>
+        /* Basic Reset and Styling (Updated) */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #28a745; /* Changed to Green for Ansible status */
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e1e1e1 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #28a745; /* Changed hover color */
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px 0;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .status-banner {
+            background-color: #d4edda; /* Light green background */
+            color: #155724; /* Dark green text */
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Ansible Deployment Confirmation</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Deployment Status</a></li>
+                <li><a href="#">Ansible Project</a></li>
+                <li><a href="#">Server Info</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container main-content">
+        <div class="status-banner">
+            ✅ SUCCESS: This page has been deployed and updated using Ansible automation!
+        </div>
+
+        <div class="card">
+            <h2>Changes Applied Successfully</h2>
+            <p>This server's content was provisioned and configured entirely by an **Ansible Playbook**.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Managed by Ansible &copy; 2025</p>
+    </footer>
+
+</body>
+</html>
+
