@@ -1,6 +1,6 @@
 # EC2 Provision Using Terraform
 
-This repository contains Terraform and Ansible code to provision and configure AWS EC2 instances.  
+This repository contains Terraform to provision AWS EC2 instances and Ansible code to installing Apache server in that EC2.  
 It is designed as a simple Infrastructure-as-Code (IaC) example for automating cloud resource creation.
 
 ---
